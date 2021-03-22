@@ -552,3 +552,79 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2021-03-22 00:30:30.541 DEBUG 9666 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2021-03-22 00:30:30.541 DEBUG 9666 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
 2021-03-22 00:30:30.542 DEBUG 9666 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-03-22 01:01:29.928  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m29s144ms).
+2021-03-22 06:14:09.505  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h12m9s522ms).
+2021-03-22 07:20:38.416  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m28s913ms).
+2021-03-22 10:17:28.110  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h56m19s676ms).
+2021-03-22 12:42:29.441  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24m31s309ms).
+2021-03-22 23:07:07.824  WARN 9666 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h24m38s383ms).
+2021-03-22 23:35:06.065  INFO 9666 --- [RMI TCP Connection(50)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-03-22 23:35:06.338  INFO 9666 --- [RMI TCP Connection(50)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-22 23:35:06.349  INFO 9666 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-22 23:35:06.409  INFO 9666 --- [RMI TCP Connection(50)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-22 23:35:11.304  INFO 10567 --- [main] jp.co.api.myweb.MywebApplication         : Starting MywebApplication using Java 15.0.1 on tomiyamasatoshinoMacBook-puro.local with PID 10567 (/Users/tomiyamasatoshi/Public/01_Develop/01_GitHub/MyWebApi/bin/main started by tomiyamasatoshi in /Users/tomiyamasatoshi/Public/01_Develop/01_GitHub/MyWebApi)
+2021-03-22 23:35:11.308  INFO 10567 --- [main] jp.co.api.myweb.MywebApplication         : No active profile set, falling back to default profiles: default
+2021-03-22 23:35:12.656  INFO 10567 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-22 23:35:12.675  INFO 10567 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 23:35:12.675  INFO 10567 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-22 23:35:12.760  INFO 10567 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 23:35:12.761  INFO 10567 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1396 ms
+2021-03-22 23:35:13.477  INFO 10567 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-22 23:35:13.490 DEBUG 10567 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-03-22 23:35:13.587 DEBUG 10567 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2021-03-22 23:35:13.623 DEBUG 10567 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-03-22 23:35:13.633 DEBUG 10567 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-03-22 23:35:13.819  INFO 10567 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-22 23:35:13.828  INFO 10567 --- [main] jp.co.api.myweb.MywebApplication         : Started MywebApplication in 3.156 seconds (JVM running for 5.039)
+2021-03-22 23:35:19.709  INFO 10567 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-22 23:35:19.710  INFO 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-22 23:35:19.711 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-03-22 23:35:19.711 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-03-22 23:35:19.712 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-03-22 23:35:19.712 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@458bd4b5
+2021-03-22 23:35:19.712 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4d7e19e6
+2021-03-22 23:35:19.713 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-03-22 23:35:19.713  INFO 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-03-22 23:35:19.725 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/myweb/get-skills", parameters={}
+2021-03-22 23:35:19.729 DEBUG 10567 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to jp.co.api.myweb.controller.MyWebController#getSkills()
+2021-03-22 23:35:19.744  INFO 10567 --- [http-nio-8080-exec-2] jp.co.api.myweb.aop.ControllerLog        : [start controller]: /myweb/get-skills execution(SkillsResponseForm jp.co.api.myweb.controller.MyWebController.getSkills())
+2021-03-22 23:35:19.784  INFO 10567 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-03-22 23:35:20.943  INFO 10567 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-03-22 23:35:21.113  INFO 10567 --- [http-nio-8080-exec-2] jp.co.api.myweb.aop.ControllerLog        : [end controller]: /myweb/get-skills execution(SkillsResponseForm jp.co.api.myweb.controller.MyWebController.getSkills())
+2021-03-22 23:35:21.246 DEBUG 10567 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-03-22 23:35:21.246 DEBUG 10567 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2021-03-22 23:35:21.247 DEBUG 10567 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-03-22 23:35:49.174  INFO 10567 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-03-22 23:35:49.210  INFO 10567 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-22 23:35:49.212  INFO 10567 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-03-22 23:35:49.222  INFO 10567 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-03-22 23:35:52.339  INFO 10574 --- [main] jp.co.api.myweb.MywebApplication         : Starting MywebApplication using Java 15.0.1 on tomiyamasatoshinoMacBook-puro.local with PID 10574 (/Users/tomiyamasatoshi/Public/01_Develop/01_GitHub/MyWebApi/bin/main started by tomiyamasatoshi in /Users/tomiyamasatoshi/Public/01_Develop/01_GitHub/MyWebApi)
+2021-03-22 23:35:52.342  INFO 10574 --- [main] jp.co.api.myweb.MywebApplication         : No active profile set, falling back to default profiles: default
+2021-03-22 23:35:53.653  INFO 10574 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-03-22 23:35:53.670  INFO 10574 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-22 23:35:53.671  INFO 10574 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-22 23:35:53.749  INFO 10574 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-22 23:35:53.750  INFO 10574 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1356 ms
+2021-03-22 23:35:53.815  WARN 10574 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'myWebController': Unsatisfied dependency expressed through field 'skillsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'skillsServiceImpl': Unsatisfied dependency expressed through field 'skillsRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'jp.co.api.myweb.repository.SkillsRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-03-22 23:35:53.818  INFO 10574 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-03-22 23:35:53.836  INFO 10574 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-22 23:35:53.860 ERROR 10574 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field skillsRepository in jp.co.api.myweb.service.impl.SkillsServiceImpl required a bean of type 'jp.co.api.myweb.repository.SkillsRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'jp.co.api.myweb.repository.SkillsRepository' in your configuration.
+
