@@ -34,7 +34,7 @@ public class MyWebController {
 		return qualificationsService.selectQualifications();
 	}
 	
-	@RequestMapping(value = "/send-contact", method = RequestMethod.POST)
+	@RequestMapping(value = "/send-message", method = RequestMethod.POST)
 	public void insertContact(@RequestBody ContactRequestForm contactForm) {
 		contactService.insertContact(contactForm);
 	}
