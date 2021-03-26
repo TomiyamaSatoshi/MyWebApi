@@ -3,3 +3,6 @@ spring:
     url: jdbc:mysql://localhost:3306/training?training=true&zeroDataTimeBehavior=convertToNull&autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false
     username: training
     password: training
+
+mybatis:
+  config-location: classpath:/config/mybatis-config.xml

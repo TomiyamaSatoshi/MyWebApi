@@ -1,5 +1,7 @@
 package jp.co.api.myweb.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ public class SkillsServiceImpl implements SkillsService {
 	private SkillsRepository skillsRepository;
 	
 	@Override
-	public SkillsResponseForm selectSkills() {
+	public List<SkillsResponseForm> selectSkills() {
 		return skillsRepository.selectAll();
 	}
 

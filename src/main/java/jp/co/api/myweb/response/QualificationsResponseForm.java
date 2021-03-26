@@ -7,8 +7,8 @@ import lombok.Data;
 @Data
 public class QualificationsResponseForm {
 
-	private int qualification_id;
-	private String qualification_name;
-	private Date qualification_get_date;
+	private int qualificationId;
+	private String qualificationName;
+	private Date qualificationGetDate;
 	
 }

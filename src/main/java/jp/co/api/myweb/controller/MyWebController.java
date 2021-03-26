@@ -1,5 +1,7 @@
 package jp.co.api.myweb.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,12 +27,12 @@ public class MyWebController {
 	ContactService contactService;
 	
 	@RequestMapping(value = "/get-skills", method = RequestMethod.POST)
-	public SkillsResponseForm getSkills() {
+	public List<SkillsResponseForm> getSkills() {
 		return skillsService.selectSkills();
 	}
 	
 	@RequestMapping(value = "/get-qualifications", method = RequestMethod.POST)
-	public QualificationsResponseForm getQualifications() {
+	public List<QualificationsResponseForm> getQualifications() {
 		return qualificationsService.selectQualifications();
 	}
 	
