@@ -7,11 +7,16 @@ import lombok.Data;
 @Data
 public class ContactRequestForm {
 
-	@NotBlank
+	@NotBlank(message = "name is required.")
 	private String name;
-	@NotBlank
+	
+	@NotBlank(message = "mailAddress is required.")
 	private String mailAddress;
+	
+	@NotBlank(message = "contactTitle is required.")
 	private String contactTitle;
+	
+	@NotBlank(message = "contactContent is required.")
 	private String contactContent;
 
 }
