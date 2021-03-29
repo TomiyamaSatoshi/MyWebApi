@@ -1,6 +1,6 @@
 package jp.co.api.myweb.response;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import lombok.Data;
 
@@ -9,6 +9,6 @@ public class QualificationsResponseForm {
 
 	private int qualificationId;
 	private String qualificationName;
-	private Date qualificationGetDate;
+	private LocalDate qualificationGetDate;
 	
 }
