@@ -5,8 +5,8 @@ plugins {
 }
 
 group = 'jp.co.api'
-version = '0.0.1'
-sourceCompatibility = '15'
+version = '0.0.2'
+sourceCompatibility = '10'
 
 configurations {
 	compileOnly {
@@ -24,7 +24,7 @@ dependencies {
 	implementation "org.springframework.boot:spring-boot-starter-validation:2.4.2"
 	compile 'org.projectlombok:lombok'
 	compile 'org.springframework.boot:spring-boot-starter-aop'
-	runtimeOnly 'mysql:mysql-connector-java'
+	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
