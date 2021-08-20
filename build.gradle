@@ -5,8 +5,12 @@ plugins {
 }
 
 group = 'jp.co.api'
-version = '0.0.2'
+version = '1.0.1'
 sourceCompatibility = '10'
+
+bootJar {
+    archiveFileName = 'myweb-1.0.1.jar'
+}
 
 configurations {
 	compileOnly {

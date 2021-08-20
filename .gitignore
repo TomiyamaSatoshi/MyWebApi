@@ -35,4 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
-logs/*.log*
+/logs/application.log.*
+/src/main/resources/application.yaml
