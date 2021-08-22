@@ -1,9 +1,13 @@
+jasypt:
+  encryptor:
+    bean: encryptorBean
+
 spring:
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/myweb?serverTimezone=JST
     username: docker
-    password: docker
+    password: ENC(nI04u1vIz8JroXKWG3gE9A==)
 
 mybatis:
   config-location: classpath:/config/mybatis-config.xml
