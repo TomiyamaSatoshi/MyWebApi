@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.api.myweb.repository.QualificationRepository">
+	<select id="selectAll" resultType="jp.co.api.myweb.entity.QualificationEntity">
+		SELECT 
+			qualification_id
+			, qualification_name
+			, qualification_get_date
+		FROM
+			qualifications
+		ORDER BY
+			qualification_get_date ASC
+	</select>
+</mapper>
