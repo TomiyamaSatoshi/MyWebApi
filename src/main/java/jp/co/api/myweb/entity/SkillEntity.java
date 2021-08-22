@@ -1,9 +1,9 @@
-package jp.co.api.myweb.response;
+package jp.co.api.myweb.entity;
 
 import lombok.Data;
 
 @Data
-public class SkillsResponseForm {
+public class SkillEntity {
 
 	private int skillId;
 	private int skillType;

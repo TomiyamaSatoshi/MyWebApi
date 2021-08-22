@@ -5,11 +5,11 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
-import jp.co.api.myweb.response.SkillsResponseForm;
+import jp.co.api.myweb.entity.SkillEntity;
 
 @Component
 @Mapper
-public interface SkillsRepository {
+public interface SkillRepository {
 
-	public List<SkillsResponseForm> selectAll();
+	public List<SkillEntity> selectAll();
 }

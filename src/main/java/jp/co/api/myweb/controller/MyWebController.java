@@ -1,7 +1,5 @@
 package jp.co.api.myweb.controller;
 
-import java.util.List;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import jp.co.api.myweb.exception.ApplicationErrorException;
 import jp.co.api.myweb.request.ContactRequestForm;
 import jp.co.api.myweb.response.IntroductionResponseForm;
-import jp.co.api.myweb.response.QualificationsResponseForm;
-import jp.co.api.myweb.response.SkillsResponseForm;
+import jp.co.api.myweb.response.SkillResponseForm;
 import jp.co.api.myweb.service.ContactService;
 import jp.co.api.myweb.service.IntroductionService;
-import jp.co.api.myweb.service.QualificationsService;
-import jp.co.api.myweb.service.SkillsService;
+import jp.co.api.myweb.service.SkillService;
 
 @RestController
 @RequestMapping("/myweb")
@@ -28,9 +24,7 @@ public class MyWebController extends BaseController {
 	@Autowired
 	IntroductionService introductionService;
 	@Autowired
-	SkillsService skillsService;
-	@Autowired
-	QualificationsService qualificationsService;
+	SkillService skillService;
 	@Autowired
 	ContactService contactService;
 	
@@ -40,13 +34,8 @@ public class MyWebController extends BaseController {
 	}
 	
 	@RequestMapping(value = "/get-skills", method = RequestMethod.POST)
-	public List<SkillsResponseForm> getSkills() {
-		return skillsService.selectSkills();
-	}
-	
-	@RequestMapping(value = "/get-qualifications", method = RequestMethod.POST)
-	public List<QualificationsResponseForm> getQualifications() {
-		return qualificationsService.selectQualifications();
+	public SkillResponseForm getSkillsAndQualifications() {
+		return skillService.selectSkill();
 	}
 	
 	@RequestMapping(value = "/send-message", method = RequestMethod.POST)
