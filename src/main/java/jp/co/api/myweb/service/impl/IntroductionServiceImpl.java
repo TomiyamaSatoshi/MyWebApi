@@ -25,8 +25,8 @@ public class IntroductionServiceImpl implements IntroductionService {
 	public IntroductionResponseForm selectParsonalAndCareerHistory() {
 		
 		// 日付フォーマットの定義
-		SimpleDateFormat parsonalFormatter = new SimpleDateFormat("YYYY MM DD", Locale.US);
-		SimpleDateFormat careerFormatter = new SimpleDateFormat("YYYY MMMM", Locale.US);
+		SimpleDateFormat parsonalFormatter = new SimpleDateFormat("MMM d, y", new Locale("en", "US"));
+		SimpleDateFormat careerFormatter = new SimpleDateFormat("MMM y", new Locale("en", "US"));
 		
 		// ParsonalEntity全件取得
 		ParsonalEntity parsonalEntity = parsonalRepository.selectAll();
