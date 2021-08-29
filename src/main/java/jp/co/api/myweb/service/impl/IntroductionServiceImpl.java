@@ -22,6 +22,7 @@ public class IntroductionServiceImpl implements IntroductionService {
 	@Autowired
 	CareerHistoryRepository careerHistoryRepository;
 	
+	@Override
 	public IntroductionResponseForm selectParsonalAndCareerHistory() {
 		
 		// 日付フォーマットの定義
