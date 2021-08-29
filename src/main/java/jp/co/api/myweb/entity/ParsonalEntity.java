@@ -12,6 +12,8 @@ public class ParsonalEntity extends BaseEntity {
 	private String nativePlace;
 	private String currentLocation;
 	private String hobby;
+	private String wellcomeMessageMain;
+	private String wellcomeMessageSub;
 	
 	private String birthdayConvert;
 

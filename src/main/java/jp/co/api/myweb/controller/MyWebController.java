@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import jp.co.api.myweb.entity.ParsonalEntity;
 import jp.co.api.myweb.exception.ApplicationErrorException;
 import jp.co.api.myweb.request.ContactRequestForm;
 import jp.co.api.myweb.response.IntroductionResponseForm;
 import jp.co.api.myweb.response.SkillResponseForm;
 import jp.co.api.myweb.service.ContactService;
+import jp.co.api.myweb.service.HomeService;
 import jp.co.api.myweb.service.IntroductionService;
 import jp.co.api.myweb.service.SkillService;
 
@@ -22,11 +24,18 @@ import jp.co.api.myweb.service.SkillService;
 public class MyWebController extends BaseController {
 	
 	@Autowired
+	HomeService homeService;
+	@Autowired
 	IntroductionService introductionService;
 	@Autowired
 	SkillService skillService;
 	@Autowired
 	ContactService contactService;
+	
+	@RequestMapping(value = "/get-home-contents", method = RequestMethod.POST)
+	public ParsonalEntity getHomeContents() {
+		return homeService.selectParsonal();
+	}
 	
 	@RequestMapping(value = "/get-introduction", method = RequestMethod.POST)
 	public IntroductionResponseForm getIntoroduction() {

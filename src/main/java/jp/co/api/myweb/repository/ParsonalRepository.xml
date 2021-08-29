@@ -8,6 +8,8 @@
 			, native_place
 			, current_location
 			, hobby
+			, wellcome_message_main
+			, wellcome_message_sub
 			, created_at
 		FROM
 			parsonal
