@@ -10,6 +10,7 @@
 			, hobby
 			, wellcome_message_main
 			, wellcome_message_sub
+			, wellcome_message_name
 			, created_at
 		FROM
 			parsonal
